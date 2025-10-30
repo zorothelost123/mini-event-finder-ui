@@ -4,7 +4,7 @@ import axios from 'axios';
 import { Routes, Route, Link, useParams } from 'react-router-dom';
 import './App.css';
 
-const API_URL = 'http://localhost:5001/api/events';
+const API_URL = (process.env.REACT_APP_API_URL || 'http://localhost:5001') + '/api/events';
 
 // -----------------------------------------------------------------
 // 1. THE MAIN PAGE COMPONENT
